@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+}
+
+.about-container {
+  background-color: #343232;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 30px;
+}
+
+.profile-container {
+  margin-right: 50px;
+}
+
+.about-section {
+  color: wheat;
+}
+
+.about-section h1 {
+  font-size: xx-large;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.list-section {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 0 15rem;
+}
+
+.cover-container {
+  min-width: 100%;
+  height: calc(100vh);
+  background-image: url("/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+}
+
+.card-container {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: white;
+  padding: 30px;
+  max-width: 1024px;
+  margin: auto;
+  align-self: center;
+  background-color: rgba(204, 139, 139, 0.233);
+  backdrop-filter: blur(10px);
+  /* font-size: larger; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-title {
+  margin: auto;
+  width: fit-content;
+  font-size: xx-large;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+b {
+  color: rgba(5, 8, 22, 0.753);
+}
+
+svg:hover {
+  cursor: pointer;
+  fill: rgb(165, 78, 37);
+}
+
+.resume-container {
+  background-color: rgba(245, 245, 245, 1);
+  padding: 100px;
+}
+
+.resume-content {
+  padding: 30px 0;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  border-bottom: 2px solid #858282;
+}
+
+.resume-title {
+  font-weight: bold;
+  font-size: 200%;
+  border-bottom: 5px solid #f47738;
+  height: max-content;
+  width: max-content;
+}
+
+.resume-heading {
+  font-size: 150%;
+  color: rgb(59, 58, 58);
+  font-family: fantasy;
+}
+
+.resume-subheading {
+  font-size: smaller;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.resume-text {
+  margin-top: 10px;
+}
+
+section {
+  margin-top: 50px;
+}
+
+section:first-child {
+  margin-top: 0;
+}
+
+.card-tile {
+  border: 2px solid gray;
+  background-color: white;
+  max-width: max-content;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+.tile-title {
+  color: rgba(8, 8, 8, 0.849);
+  font-weight: bold;
+  font-size: large;
+  font-family: cursive;
+}
