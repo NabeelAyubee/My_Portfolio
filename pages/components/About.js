@@ -2,22 +2,27 @@ import Image from "next/image";
 
 const Info = [
   {
+    id: 1,
     label: "Location",
     text: "Bangalore",
   },
   {
+    id: 2,
     label: "Age",
     text: "25",
   },
   {
+    id: 3,
     label: "Nationality",
     text: "India",
   },
   {
+    id: 4,
     label: "Education",
     text: "Bachelor of Technology",
   },
   {
+    id: 5,
     label: "Employement",
     text: "Trisys IT Servicer Pvt. Ltd.",
   },
@@ -41,7 +46,7 @@ export const About = () => {
         <ul className="list-section">
           {Info.map((i) => {
             return (
-              <li>
+              <li key={i.key}>
                 <label>{i.label} :</label>
                 <span> {i.text}</span>
               </li>

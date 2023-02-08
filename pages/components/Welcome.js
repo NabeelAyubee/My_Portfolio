@@ -15,22 +15,27 @@ const styles = {
 };
 const ProfileData = [
   {
+    key: 1,
     icon: <LinkedinIcon styles={styles} />,
     href: "https://www.linkedin.com/in/nabeel-ayubee-62aa431ab/",
   },
   {
+    key: 2,
     icon: <GitHubIcon styles={styles} />,
     href: "https://github.com/NabeelAyubee",
   },
   {
+    key: 3,
     icon: <TwitterIcon styles={styles} />,
     href: "https://twitter.com/AyubeeMd",
   },
   {
+    key: 4,
     icon: <UpworkIcon styles={styles} />,
     href: "https://www.upwork.com/freelancers/~0186355af7877edae2",
   },
   {
+    key: 5,
     icon: <InstaIcon styles={styles} />,
     href: "https://www.instagram.com/nabeel.ayubee/",
   },
@@ -42,7 +47,7 @@ export const Welcome = () => {
       <div className="card-container">
         <h1 className="card-title">Hi! I am Md Nabeel Ayubee. </h1>
         <p className="card-text">
-          I'm a India based <b>Front End Software Engineer</b>, currently
+          I am a India based <b>Front End Software Engineer</b>, currently
           working at CRM Domain, FSM Domain helping build a modern,
           mobile-first, responsive design with building 100% reusable
           components.
@@ -61,7 +66,9 @@ export const Welcome = () => {
           }}
         >
           {ProfileData.map((i) => (
-            <a href={i.href}>{i.icon}</a>
+            <a key={i.key} href={i.href}>
+              {i.icon}
+            </a>
           ))}
         </ul>
       </div>

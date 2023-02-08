@@ -2,9 +2,11 @@ import { CardTile } from "./CardTile";
 
 const data = [
   {
+    key: 1,
     title: "WORK",
     section: [
       {
+        id: 1,
         heading: "Software Engineer",
         subheading: "Trisys IT services Pvt Ltd",
         from: "2021",
@@ -24,9 +26,11 @@ const data = [
     ],
   },
   {
+    key: 2,
     title: "EDUCATION",
     section: [
       {
+        id: 1,
         heading: "Bachelor of Technology",
         subheading: "Haldia Institute of Technology, Haldia",
         from: "2017",
@@ -44,6 +48,7 @@ const data = [
               Lorem Ipsum.",
       },
       {
+        id: 2,
         heading: "Higher Secondary School",
         subheading: "DAV Public School",
         from: "2014",
@@ -61,6 +66,7 @@ const data = [
               Lorem Ipsum.",
       },
       {
+        id: 3,
         heading: "Senior Secondary School",
         subheading: "DAV Public School",
         from: "2012",
@@ -80,12 +86,13 @@ const data = [
     ],
   },
   {
+    key: 3,
     title: "SKILLS",
     section: [
-      { description: <CardTile /> },
-      { description: <CardTile /> },
-      { description: <CardTile /> },
-      { description: <CardTile /> },
+      {
+        id: 1,
+        description: <CardTile />,
+      },
     ],
   },
 ];
@@ -97,12 +104,12 @@ export const Resume = () => {
       <div className="resume-container">
         {data.map((i, n) => {
           return (
-            <div className="resume-content">
+            <div className="resume-content" key={i.key}>
               <div className="resume-title">{i.title}</div>
               <div className="resume-subcontainer">
                 {i.section.map((j) => {
                   return (
-                    <section>
+                    <section key={j.id}>
                       {j?.heading && (
                         <h1 className="resume-heading"> {j.heading} </h1>
                       )}
