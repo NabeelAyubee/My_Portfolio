@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Info = [
   {
     label: "Location",
@@ -25,8 +27,8 @@ export const About = () => {
   return (
     <div className="about-container">
       <div className="profile-container">
-        <img
-          src="profile_pic.jpeg"
+        <Image
+          src="/profile_pic.jpeg"
           width="200"
           height="200"
           style={{ borderRadius: "30px" }}
