@@ -28,7 +28,7 @@ const Info = [
   },
 ];
 
-export const About = () => {
+const About = () => {
   return (
     <div className="about-container">
       <div className="profile-container">
@@ -57,3 +57,5 @@ export const About = () => {
     </div>
   );
 };
+
+export default About;

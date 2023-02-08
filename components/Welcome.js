@@ -7,7 +7,7 @@ import {
   LinkedinIcon,
   TwitterIcon,
   UpworkIcon,
-} from "./svgindex";
+} from "../lib/SvgIndex";
 
 const styles = {
   height: "50px",
@@ -41,7 +41,7 @@ const ProfileData = [
   },
 ];
 
-export const Welcome = () => {
+const Welcome = () => {
   return (
     <div className="cover-container relative">
       <div className="card-container">
@@ -87,3 +87,5 @@ export const Welcome = () => {
     </div>
   );
 };
+
+export default Welcome;

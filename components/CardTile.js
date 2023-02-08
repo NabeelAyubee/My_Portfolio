@@ -1,9 +1,11 @@
 import Image from "next/image";
 
-export const CardTile = () => {
+const CardTile = () => {
   return (
     <div className="card-tile">
       <div className="tile-title"> React JS </div>
     </div>
   );
 };
+
+export default CardTile;

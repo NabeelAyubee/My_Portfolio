@@ -1,4 +1,4 @@
-import { CardTile } from "./CardTile";
+import CardTile from "./CardTile";
 
 const data = [
   {
@@ -138,3 +138,5 @@ export const Resume = () => {
     </>
   );
 };
+
+export default Resume;

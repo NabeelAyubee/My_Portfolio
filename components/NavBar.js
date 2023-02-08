@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-export const NavBar = () => {
+const NavBar = () => {
   const id = useRef();
   const options = [
     {
@@ -27,10 +27,15 @@ export const NavBar = () => {
       className="navbar-conatiner flex p-5 list-none bg-gray-800 justify-center fixed w-screen z-50"
     >
       {options.map((i) => (
-        <li key={i.key} className="navbar-item text-gray-300 px-5 py-2 font-medium hover:text-white hover:bg-gray-700 rounded-md cursor-pointer">
+        <li
+          key={i.key}
+          className="navbar-item text-gray-300 px-5 py-2 font-medium hover:text-white hover:bg-gray-700 rounded-md cursor-pointer"
+        >
           {i.title}
         </li>
       ))}
     </div>
   );
 };
+
+export default NavBar;
