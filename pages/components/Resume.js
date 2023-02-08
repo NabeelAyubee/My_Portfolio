@@ -119,7 +119,7 @@ export const Resume = () => {
                           </span>
                         </div>
                       )}
-                      <p className="resume-text">{j.description}</p>
+                      <div className="resume-text">{j.description}</div>
                     </section>
                   );
                 })}

@@ -29,6 +29,7 @@ export const About = () => {
       <div className="profile-container">
         <Image
           src="/profile_pic.jpeg"
+          alt="Nabeel Profile"
           width="200"
           height="200"
           style={{ borderRadius: "30px" }}
