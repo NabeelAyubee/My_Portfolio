@@ -82,7 +82,11 @@ const Welcome = () => {
           padding: "10px",
         }}
       >
-        <ArrowDown styles={{ fill: "black", height: "30px", width: "30px" }} />
+        <a href="#about">
+          <ArrowDown
+            styles={{ fill: "black", height: "30px", width: "30px" }}
+          />
+        </a>
       </div>
     </div>
   );

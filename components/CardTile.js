@@ -1,9 +1,10 @@
 import Image from "next/image";
 
-const CardTile = () => {
+const CardTile = ({ skill, child }) => {
   return (
     <div className="card-tile">
-      <div className="tile-title"> React JS </div>
+      {child}
+      <div className="tile-title"> {skill} </div>
     </div>
   );
 };
