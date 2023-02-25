@@ -159,7 +159,7 @@ export const Resume = () => {
                         {!j.description?.map
                           ? j.description
                           : j.description.map((k) => (
-                              <div>
+                              <div key={k.id}>
                                 <li> {k} </li>
                               </div>
                             ))}
