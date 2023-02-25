@@ -265,3 +265,30 @@ svg:hover {
   opacity: 1;
   transition: all 0.2s 0.2s ease-in-out;
 }
+
+@media screen and (max-width:768px) {
+  .about-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .about-section{
+    width: 100%;
+    padding: 2%;
+  }
+  .list-section{
+    grid-template-columns: 1fr;
+  }
+  .resume-container{
+    padding: 5%;
+  }
+  .resume-content{
+    grid-template-columns: 1fr;
+  }
+  .resume-title{
+    margin-bottom: 5%;
+  }
+  .resume-subcontainer-skills{
+    grid-template-columns: 1fr;
+  }
+}
